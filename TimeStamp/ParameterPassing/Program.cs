@@ -2,7 +2,6 @@
 
 namespace ParameterPassing
 {
-
     public class Student
     {
         public string Name { get; set; }
@@ -20,7 +19,15 @@ namespace ParameterPassing
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var student = new Student
+            {
+                Name = "Susan",
+                Enrolled = false
+            };
+
+            Enroll(student);
+            Console.WriteLine(student.Name);
+            Console.WriteLine(student.Enrolled);
         }
     }
 }

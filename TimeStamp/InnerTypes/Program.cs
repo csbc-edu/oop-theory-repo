@@ -31,7 +31,10 @@ namespace InnerTypes
                 // Console.WriteLine(obj.number);
             }
         }
-    }
+
+        
+
+}
 
     class Program
     {
@@ -40,6 +43,8 @@ namespace InnerTypes
             // Accessing static method1  
             // of the inner class 
             Outer_class.Inner_class.method1();
+
+            var student = new { Id = 1, FirstName = "James", LastName = "Bond" };
         }
     }
 }
